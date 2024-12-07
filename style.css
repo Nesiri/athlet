@@ -1,0 +1,390 @@
+/* Reset some default styles */
+
+* {
+  margin: 0;
+  padding: 0;
+ 
+}
+ html{
+
+  width: 100%;
+  height: 100%;
+ }
+body {
+  font-family: Arial, sans-serif;
+  
+  color: #333;
+ /* background-color: #f4f4f4;*/
+  height: 80%;
+  width: 80%;
+  overflow :hidden;
+  /*background-color: #f5f0e6;*/
+  font-family: 'Old English Text MT', serif;
+ /* background-color: #f5f0e6;*/
+  font-family: 'MedievalSharp', serif;
+  }
+  
+
+
+header > h1{
+  background-color: #00ff33;
+  text-align: center;
+  width: 200%;
+  position: relative;
+  left: 19px;
+position: relative;
+left: 50px;
+}
+header, section {
+ 
+  padding: 20px;
+  background: #fff;
+ 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#F3FF90;;
+  display: flex;
+  justify-content: center;
+ 
+  text-align: right;
+  width: 150%;
+  height: auto;
+  position: relative;
+  right: 20px;
+z-index: 1;
+opacity: 0.9;
+
+  
+}
+
+li {
+ 
+  float: left;
+  clear: left;
+}
+
+li a {
+  display: block;
+  color: #12372A;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Old English Text MT', serif;
+
+  
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color:#ADBC9F;
+  
+}
+
+/* background image showing code*/
+
+/*section:nth-child(1) img{
+  position:absolute;
+  top: 100px;
+  background-image: url('image.png');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  opacity: 0.9;
+
+  background-repeat: no-repeat
+}*/
+
+:nth-of-type(2) img{
+opacity: 0.5;
+  position: absolute;
+  top: 120px;
+  left: 1050px;
+  display: hidden;
+}
+/* gurd photo*/
+div:nth-of-type(1) img{
+
+ width: 200px;
+ height: 200px;
+  float: right;
+  clear: right;
+  position: relative;
+  top: 350px;
+  left: 110px;
+}
+
+
+
+
+.waterfall {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%; /* Double the height to create a seamless loop */
+background-image: url('Nile.jpg'); /* Replace with your waterfall image path */
+background-position: center;
+background-repeat: repeat; /* Repeat the background vertically */
+animation: flow 10s linear infinite; /* Continuous flow animation */
+opacity: 0.6;
+}
+
+
+
+
+
+
+/* Rolled Scroll - Closed State */
+.scroll-rolled {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 150px;
+height: 60px;
+background-color: #d4af37;
+border: 2px solid #6b4f29;
+border-radius: 50px;
+color: #4a2e14;
+font-size: 20px;
+padding: 10px;
+text-align: center;
+cursor: pointer;
+position: relative;
+transition: all 0.3s ease;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+font-family: 'MedievalSharp', serif;
+}
+
+.scroll-rolled:hover {
+transform: scale(1.05);
+}
+
+/* Unrolled Scroll Style (Open State) */
+.scroll-unrolled {
+position: relative;
+width: 400px;
+height: 350px;
+background: #ffe4b5;
+border: 8px solid #8b5a2b;
+border-radius: 8px;
+padding: 20px;
+overflow: hidden;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+animation: unroll 0.8s ease-out forwards;
+}
+
+/* Medieval Scroll Effects */
+.scroll-header {
+font-size: 24px;
+text-align: center;
+font-weight: bold;
+color: #4a2e14;
+margin-bottom: 15px;
+font-family: 'MedievalSharp', cursive;
+}
+
+.hidden {
+display: none;
+}
+
+/* Page Text Style */
+.page {
+font-size: 18px;
+color: #4a2e14;
+line-height: 1.6;
+padding: 10px;
+text-align: center;
+font-family: 'MedievalSharp', cursive;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background-color: #deb887;
+border: none;
+color: #4a2e14;
+padding: 10px;
+cursor: pointer;
+font-size: 16px;
+}
+
+#prev-btn {
+  
+left: 10px;
+margin-top: 170px;
+}
+
+#next-btn {
+
+right: 10px;
+margin-top: 170px;
+
+   
+}
+
+.nav-btn:hover {
+background-color: #c89a64;
+}
+
+aside{
+position: absolute;
+left: 50px;
+
+}
+/* Button styling 
+#download-btn {
+padding: 10px 20px;
+font-size: 16px;
+background-color: hsl(22, 39%, 49%); 
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+position: absolute;
+top: 600px;
+left: 20px;
+}
+
+#download-btn:hover {
+
+background-color: red;
+}*/
+
+#linkedin-icon {
+font-size: 40px; /* Icon size */
+color: #0077B5; /* LinkedIn blue color */
+transition: opacity 0.5s; /* Smooth transition for blinking */
+display: flex;
+z-index: 3;
+position: relative;
+
+}
+footer{
+background-color: aqua;
+position: absolute;
+bottom: 9px;
+left: 1400px;
+}
+
+.header {
+font-size: 2rem;
+opacity: 0;
+transition: opacity 1.5s ease-in-out;
+
+}
+
+
+.circle {
+width: 100px;
+height: 100px;
+border: none;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+bottom: 500px;
+left: 100px;
+}
+
+.rotating-text {
+position: relative;
+font-size: 0.9rem;
+color: #f01010;
+top: 100px;
+right: 140px;
+z-index: 5;
+}
+
+
+
+      /* Basic styles for the scrolling container and text */
+.Nesru {
+          overflow: hidden;
+          white-space: nowrap;
+          width: 150%;
+          position: relative;
+          height: 50px;
+          background-color: #F3FF90;
+          right: 20px;
+          
+          
+}
+
+.Nesru-text {
+          position: absolute;
+          font-size: 3em;
+          font-weight: bold;
+          white-space: nowrap;
+          color: #059212;
+          position: relative;
+          left: 40%;
+         
+}
+
+
+#linkedin-icon {
+  transition: opacity 0.5s;
+  opacity: 1;
+  position: absolute;
+  top: 10%;
+  z-index: 5;
+  left: 85%;
+  width: 70px;
+  height: 50px;
+}
+
+
+
+
+#notification {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+ 
+}
+.success {
+  color: green;
+  border: 1px solid green;
+}
+.error {
+  color: red;
+  border: 1px solid red;
+}
+
+#contact-section {
+  display: none; /* Initially hidden */
+  position: fixed; /* Or fixed, depending on your needs */
+  top: 77%; /* Center vertically, adjust as needed */
+  left: 70%; /* Center horizontally, adjust as needed */
+  transform: translate(-50%, -50%); /* Center alignment */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-top: 2px solid #ccc;
+  z-index: 9999; /* Very high to ensure it's above everything else */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional for a nice effect */
+  background-image: none;
+}
+

@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="styles.css">
+
+    
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          margin: 20px;
+          background-color: #f4f4f4;
+      }
+      h1, h2 {
+          text-align: center;
+          color: #333;
+      }
+      .selector-section {
+          margin-top: 20px;
+          padding: 10px;
+          border: 1px solid #ddd;
+          background-color: #fff;
+          border-radius: 5px;
+      }
+      .selector {
+          font-weight: bold;
+          color: #0073e6;
+      }
+      .description {
+          margin-left: 10px;
+          color: #333;
+      }
+      .section-title {
+          font-size: 1.2em;
+          color: #555;
+          margin-bottom: 10px;
+          border-bottom: 2px solid #0073e6;
+          padding-bottom: 5px;
+      }
+  </style>
+</head>
+
+<header>
+ 
+</header>
+<body>
+
+<h1>Complete CSS Selectors Cheat Sheet</h1>
+<p>This document provides a comprehensive overview of all CSS selectors, organized into sections for easy reference.</p>
+
+<div class="selector-section">
+  <h2 class="section-title">1. Basic Selectors</h2>
+  <p><span class="selector">Universal Selector (*)</span>: Selects all elements on the page.</p>
+  <p><span class="selector">Type Selector (e.g., div, p)</span>: Selects all instances of a specific element type.</p>
+  <p><span class="selector">Class Selector (.class-name)</span>: Selects elements with a specific class.</p>
+  <p><span class="selector">ID Selector (#id-name)</span>: Selects an element with a unique ID.</p>
+</div>
+
+<div class="selector-section">
+  <h2 class="section-title">2. Attribute Selectors</h2>
+  <p><span class="selector">[attribute]</span>: Selects elements that have a specific attribute.</p>
+  <p><span class="selector">[attribute=value]</span>: Selects elements with an attribute matching a specific value.</p>
+  <p><span class="selector">[attribute~=value]</span>: Selects elements with an attribute containing a specific word.</p>
+  <p><span class="selector">[attribute|=value]</span>: Selects elements with an attribute value that starts with "value".</p>
+  <p><span class="selector">[attribute^=value]</span>: Selects elements where an attribute starts with a specific value.</p>
+  <p><span class="selector">[attribute$=value]</span>: Selects elements where an attribute ends with a specific value.</p>
+  <p><span class="selector">[attribute*=value]</span>: Selects elements where an attribute contains a specific substring.</p>
+</div>
+
+<div class="selector-section">
+  <h2 class="section-title">3. Combinator Selectors</h2>
+  <p><span class="selector">Descendant Selector (A B)</span>: Selects elements inside another element, regardless of depth.</p>
+  <p><span class="selector">Child Selector (A > B)</span>: Selects direct child elements only.</p>
+  <p><span class="selector">Adjacent Sibling (A + B)</span>: Selects the immediate sibling following a specified element.</p>
+  <p><span class="selector">General Sibling (A ~ B)</span>: Selects all siblings that follow a specific element.</p>
+</div>
+
+<div class="selector-section">
+  <h2 class="section-title">4. Pseudo-Classes</h2>
+  <p><span class="selector">:first-child</span>: Selects the first child element within a parent.</p>
+  <p><span class="selector">:last-child</span>: Selects the last child element within a parent.</p>
+  <p><span class="selector">:nth-child(n)</span>: Selects elements based on their position within a parent.</p>
+  <p><span class="selector">:nth-last-child(n)</span>: Selects elements counting from the end within a parent.</p>
+  <p><span class="selector">:nth-of-type(n)</span>: Selects elements of a specific type in their position order.</p>
+  <p><span class="selector">:nth-last-of-type(n)</span>: Selects elements of a specific type counting from the end.</p>
+  <p><span class="selector">:only-child</span>: Selects elements that are the only child within a parent.</p>
+  <p><span class="selector">:only-of-type</span>: Selects elements that are the only instance of their type within a parent.</p>
+  <p><span class="selector">:empty</span>: Selects elements with no children, including text nodes.</p>
+  <p><span class="selector">:root</span>: Selects the root element, typically <html>.</p>
+  <p><span class="selector">:hover</span>: Applies styles when an element is hovered.</p>
+  <p><span class="selector">:focus</span>: Applies styles when an element is focused.</p>
+  <p><span class="selector">:active</span>: Targets elements in an active state, such as clicked buttons.</p>
+  <p><span class="selector">:visited</span>: Applies styles to visited links.</p>
+  <p><span class="selector">:checked</span>: Selects checked form elements, such as checkboxes.</p>
+</div>
+
+<div class="selector-section">
+  <h2 class="section-title">5. Pseudo-Elements</h2>
+  <p><span class="selector">::before</span>: Inserts content before an element's actual content.</p>
+  <p><span class="selector">::after</span>: Inserts content after an element's actual content.</p>
+  <p><span class="selector">::first-line</span>: Styles the first line of an element's content.</p>
+  <p><span class="selector">::first-letter</span>: Styles the first letter of an element's content.</p>
+  <p><span class="selector">::placeholder</span>: Styles placeholder text in input elements.</p>
+  <p><span class="selector">::selection</span>: Applies styles to selected text.</p>
+  <p><span class="selector">::marker</span>: Styles the marker of list items, such as bullets or numbers.</p>
+</div>
+
+<div class="selector-section">
+  <h2 class="section-title">6. Advanced Selectors</h2>
+  <p><span class="selector">:not(selector)</span>: Negates a selector, selecting all elements that do not match the specified selector.</p>
+  <p><span class="selector">:is(selector)</span>: Matches any element within a list of selectors.</p>
+  <p><span class="selector">:where(selector)</span>: Matches elements within a list without affecting specificity.</p>
+  <p><span class="selector">:has(selector)</span>: Selects elements containing specific descendants (experimental).</p>
+  <p><span class="selector">:focus-within</span>: Applies styles to an element if any of its descendants are focused.</p>
+  <p><span class="selector">:focus-visible</span>: Targets focused elements that should visually indicate focus.</p>
+</div>
+
+
+  <style>
+      body { font-family: Arial, sans-serif; line-height: 1.6; }
+      .container { width: 80%; margin: 0 auto; }
+      h1 { color: #333; }
+      h2 { background-color: #f4f4f4; padding: 5px; }
+      .selector-group { margin-bottom: 20px; }
+      .selector { font-weight: bold; color: #2c3e50; }
+      .description, .differences, .similarities, .use-case, .preference { margin: 10px 0; }
+      .highlight { background-color: #e7f3fe; padding: 5px; border-radius: 3px; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>CSS Selectors Cheat Sheet</h1>
+
+  <div class="selector-group">
+      <h2><span class="selector">*</span> Universal Selector</h2>
+      <div class="description">The universal selector applies to all elements on the page.</div>
+      <div class="differences highlight">Difference: Targets all elements, unlike more specific selectors.</div>
+      <div class="similarities highlight">Similarity: Like type selectors, it applies to multiple elements, but not specific to any type.</div>
+      <div class="use-case highlight">Use Case: Apply global styles (e.g., box-sizing) across all elements.</div>
+      <div class="preference highlight">Preferred: When a broad application of styles is needed.</div>
+  </div>
+
+  <div class="selector-group">
+      <h2><span class="selector">element</span> Type Selector (e.g., <code>div</code>, <code>p</code>)</h2>
+      <div class="description">Selects all instances of a specified HTML element.</div>
+      <div class="differences highlight">Difference: Targets only specific elements, unlike the universal selector.</div>
+      <div class="similarities highlight">Similarity: Applies to all elements of the specified type, like the universal selector applies to all elements.</div>
+      <div class="use-case highlight">Use Case: Useful for setting consistent styles for specific HTML elements.</div>
+      <div class="preference highlight">Preferred: When styling a specific element type across the page.</div>
+  </div>
+
+  <div class="selector-group">
+      <h2><span class="selector">.class-name</span> Class Selector</h2>
+      <div class="description">Targets all elements with a specific class attribute.</div>
+      <div class="differences highlight">Difference: More specific than the universal or type selectors and can apply to multiple elements.</div>
+      <div class="similarities highlight">Similarity: Like the ID selector, used for targeted styling but can apply to multiple elements.</div>
+      <div class="use-case highlight">Use Case: Commonly used for grouping styles for multiple elements.</div>
+      <div class="preference highlight">Preferred: For reusable styles across various elements.</div>
+  </div>
+
+  <div class="selector-group">
+      <h2><span class="selector">#id-name</span> ID Selector</h2>
+      <div class="description">Selects a unique element with a specific ID.</div>
+      <div class="differences highlight">Difference: IDs are unique; classes can apply to multiple elements.</div>
+      <div class="similarities highlight">Similarity: Both are used for targeted styling, but ID has higher specificity.</div>
+      <div class="use-case highlight">Use Case: Used for unique styling of one specific element.</div>
+      <div class="preference highlight">Preferred: When an element requires a unique style, but avoid overuse as it limits reusability.</div>
+  </div>
+
+  <div class="selector-group">
+      <h2><span class="selector">[attribute]</span> Attribute Selector</h2>
+      <div class="description">Targets elements containing a specific attribute.</div>
+      <div class="differences highlight">Difference: Targets based on attribute presence rather than type or class.</div>
+      <div class="similarities highlight">Similarity: Similar to the class selector, but based on attributes rather than classes.</div>
+      <div class="use-case highlight">Use Case: Styling elements with particular attributes, like <code>input[type="text"]</code>.</div>
+      <div class="preference highlight">Preferred: When styling elements dynamically based on their attributes.</div>
+  </div>
+
+  <div class="selector-group">
+      <h2><span class="selector">:nth-child(n)</span> vs. <span class="selector">:nth-of-type(n)</span></h2>
+      <div class="description">
+          <strong><code>:nth-child(n)</code></strong> selects elements based on position within their parent, regardless of type.
+          <strong><code>:nth-of-type(n)</code></strong> selects elements based on position within their parent of a specific type.
+      </div>
+      <div class="differences highlight">Difference: <code>:nth-child(n)</code> matches any child element by position, while <code>:nth-of-type(n)</code> matches only specific types at a given position.</div>
+      <div class="similarities highlight">Similarity: Both are pseudo-classes that use position for styling.</div>
+      <div class="use-case highlight">Use Case: <code>:nth-child</code> is used when any element at a position needs styling; <code>:nth-of-type</code> is used when only specific types at positions need styling.</div>
+      <div class="preference highlight">Preferred: Use <code>:nth-of-type</code> when you need to style specific elements of a type within a set.</div>
+  </div>
+
+  <div class="selector-group">
+      <h2><span class="selector">Descendant (A B)</span> vs. <span class="selector">Child (A > B)</span></h2>
+      <div class="description">
+          <strong>Descendant Selector (A B)</strong> targets elements nested within specified parents at any depth.
+          <strong>Child Selector (A > B)</strong> targets only direct children of a specified parent.
+      </div>
+      <div class="differences highlight">Difference: Descendant allows any depth, while Child targets only immediate children.</div>
+      <div class="similarities highlight">Similarity: Both are combinators for parent-child relationships.</div>
+      <div class="use-case highlight">Use Case: Use Descendant when styling all nested elements; Child for direct children.</div>
+      <div class="preference highlight">Preferred: Child is better for specific parent-child targeting to avoid unintended styling.</div>
+  </div>
+
+  <div class="selector-group">
+      <h2><span class="selector">:not(selector)</span> Pseudo-Class Selector</h2>
+      <div class="description">Selects elements that do not match the specified selector.</div>
+      <div class="differences highlight">Difference: Inverse of all other selectors, selects based on exclusion.</div>
+      <div class="similarities highlight">Similarity: Can work with any selector type to exclude matches.</div>
+      <div class="use-case highlight">Use Case: Useful for styling elements that do not match specific criteria.</div>
+      <div class="preference highlight">Preferred: Use for precise styling control when needing to exclude specific elements.</div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f4f4f4;
+        padding: 20px;
+       width: auto;
+        margin: auto;
+      }
+
+      h1, h2 {
+        color: #333;
+        text-align: center;
+      }
+
+      dl {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      dt {
+        font-weight: bold;
+        color: #2c3e50;
+        margin-top: 10px;
+      }
+
+      dd {
+        margin: 5px 0 15px 20px;
+        color: #555;
+      }
+
+      .example {
+        background-color: #eee;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: monospace;
+        white-space: pre-wrap;
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>CSS Cheat Sheet</h1>
+      <p>This guide provides descriptions and usage examples for common CSS properties.</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Text and Font Properties</h2>
+        <dl>
+          <dt>color</dt>
+          <dd>Sets the color of the text.
+            <div class="example">
+              color: blue;
+            </div>
+          </dd>
+
+          <dt>font-size</dt>
+          <dd>Specifies the size of the font.
+            <div class="example">
+              font-size: 16px;
+            </div>
+          </dd>
+
+          <dt>font-family</dt>
+          <dd>Sets the font type for text.
+            <div class="example">
+              font-family: Arial, sans-serif;
+            </div>
+          </dd>
+
+          <dt>font-weight</dt>
+          <dd>Adjusts the boldness of text.
+            <div class="example">
+              font-weight: bold;
+            </div>
+          </dd>
+
+          <dt>text-align</dt>
+          <dd>Specifies the horizontal alignment of text.
+            <div class="example">
+              text-align: center;
+            </div>
+          </dd>
+
+          <dt>text-decoration</dt>
+          <dd>Defines decorations for text like underline or line-through.
+            <div class="example">
+              text-decoration: underline;
+            </div>
+          </dd>
+
+          <dt>text-transform</dt>
+          <dd>Modifies text capitalization.
+            <div class="example">
+              text-transform: uppercase;
+            </div>
+          </dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2>Background Properties</h2>
+        <dl>
+          <dt>background-color</dt>
+          <dd>Sets the background color.
+            <div class="example">
+              background-color: #f0f0f0;
+            </div>
+          </dd>
+
+          <dt>background-image</dt>
+          <dd>Sets a background image.
+            <div class="example">
+              background-image: url('image.jpg');
+            </div>
+          </dd>
+
+          <dt>background-repeat</dt>
+          <dd>Defines if/how a background image repeats.
+            <div class="example">
+              background-repeat: no-repeat;
+            </div>
+          </dd>
+
+          <dt>background-position</dt>
+          <dd>Sets the starting position of a background image.
+            <div class="example">
+              background-position: center center;
+            </div>
+          </dd>
+
+          <dt>background-size</dt>
+          <dd>Specifies the size of a background image.
+            <div class="example">
+              background-size: cover;
+            </div>
+          </dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2>Box Model Properties</h2>
+        <dl>
+          <dt>width</dt>
+          <dd>Defines the width of an element.
+            <div class="example">
+              width: 200px;
+            </div>
+          </dd>
+
+          <dt>height</dt>
+          <dd>Defines the height of an element.
+            <div class="example">
+              height: 100px;
+            </div>
+          </dd>
+
+          <dt>padding</dt>
+          <dd>Sets the padding inside an element's border.
+            <div class="example">
+              padding: 10px;
+            </div>
+          </dd>
+
+          <dt>margin</dt>
+          <dd>Sets the space outside an element's border.
+            <div class="example">
+              margin: 20px;
+            </div>
+          </dd>
+
+          <dt>border</dt>
+          <dd>Sets the border of an element.
+            <div class="example">
+              border: 1px solid #000;
+            </div>
+          </dd>
+
+          <dt>border-radius</dt>
+          <dd>Defines rounded corners for elements.
+            <div class="example">
+              border-radius: 5px;
+            </div>
+          </dd>
+
+          <dt>box-shadow</dt>
+          <dd>Adds shadow to an element's box.
+            <div class="example">
+              box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            </div>
+          </dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2>Display and Positioning</h2>
+        <dl>
+          <dt>display</dt>
+          <dd>Specifies how an element is displayed.
+            <div class="example">
+              display: inline-block;
+            </div>
+          </dd>
+
+          <dt>position</dt>
+          <dd>Defines the positioning type (static, relative, absolute, fixed, sticky).
+            <div class="example">
+              position: relative;
+            </div>
+          </dd>
+
+          <dt>top, right, bottom, left</dt>
+          <dd>Offsets an element from the respective side when using position (except static).
+            <div class="example">
+              top: 10px;
+              left: 5px;
+            </div>
+          </dd>
+
+          <dt>float</dt>
+          <dd>Moves elements to the left or right, allowing other content to wrap around.
+            <div class="example">
+              float: left;
+            </div>
+          </dd>
+
+          <dt>clear</dt>
+          <dd>Stops elements from wrapping around floated elements.
+            <div class="example">
+              clear: both;
+            </div>
+          </dd>
+
+          <dt>z-index</dt>
+          <dd>Sets the stack order of positioned elements.
+            <div class="example">
+              z-index: 10;
+            </div>
+          </dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2>Flexbox Properties</h2>
+        <dl>
+          <dt>display: flex</dt>
+          <dd>Activates flexbox layout on a container.
+            <div class="example">
+              display: flex;
+            </div>
+          </dd>
+
+          <dt>justify-content</dt>
+          <dd>Aligns items horizontally within a flex container.
+            <div class="example">
+              justify-content: center;
+            </div>
+          </dd>
+
+          <dt>align-items</dt>
+          <dd>Aligns items vertically within a flex container.
+            <div class="example">
+              align-items: center;
+            </div>
+          </dd>
+
+          <dt>flex-direction</dt>
+          <dd>Sets the main axis direction.
+            <div class="example">
+              flex-direction: row;
+            </div>
+          </dd>
+
+          <dt>flex-wrap</dt>
+          <dd>Controls if items wrap to new lines.
+            <div class="example">
+              flex-wrap: wrap;
+            </div>
+          </dd>
+
+          <dt>align-self</dt>
+          <dd>Overrides align-items for individual items.
+            <div class="example">
+              align-self: flex-end;
+            </div>
+          </dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2>Grid Properties</h2>
+        <dl>
+          <dt>display: grid</dt>
+          <dd>Activates grid layout on a container.
+            <div class="example">
+              display: grid;
+            </div>
+          </dd>
+
+          <dt>grid-template-columns</dt>
+          <dd>Defines the number and width of columns in a grid.
+            <div class="example">
+              grid-template-columns: 1fr 2fr;
+            </div>
+          </dd>
+
+          <dt>grid-template-rows</dt>
+          <dd>Defines the number and height of rows in a grid.
+            <div class="example">
+              grid-template-rows: 100px auto;
+            </div>
+          </dd>
+
+          <dt>gap</dt>
+          <dd>Sets space between grid items.
+            <div class="example">
+              gap: 10px;
+            </div>
+          </dd>
+
+          <dt>grid-column</dt>
+          <dd>Specifies the column position of a grid item.
+            <div class="example">
+              grid-column: 1 / 3;
+            </div>
+          </dd>
+
+          <dt>grid-row</dt>
+          <dd>Specifies the row position of a grid item.
+            <div class="example">
+              grid-row: 1 / 2;
+            </div>
+          </dd>
+        </dl>
+      </section>
+
+      <section>
+        
+<head>
+    <title>PDF in HTML</title>
+</head>
+<style>
+    .pdf {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+    }
+
+    .pdf,
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+   h1,
+    h3 {
+        text-align: center;
+    }
+
+    h1 {
+        color: green;
+    }
+</style>
+
+<body>
+        <h1>GeeksforGeeks</h1>
+        <h3>Embedding the PDF file Using embed Tag</h3>
+        <embed class="pdf" 
+               src="csscheatsheet.pdf"
+            width="800" height="500">
+           
+      </section>
+    </main>
+
+    <footer>
+        <a href="https://devdocs.io/css/">DEV DOCS CSS</a>
+        <a href="https://www.w3schools.com/css/css_intro.asp">W3 Schools CSS</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started"> MDN WEB DOCS CSS</a>
+        <a href="https://htmlcheatsheet.com/css/CSS-Cheat-Sheet.pdf">pdf</a>
+      <p>&copy; 2024 Complete CSS Cheat Sheet. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

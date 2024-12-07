@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesru Abbamilki - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="Nesru">
+            <div class="Nesru-text" id="NesruText">Nesru Abbamilki</div>
+        </div>
+        <nav>
+            <ul>
+                <li class="header" id="header" style="color:#6096B4; font-family: 'Old English Text MT', serif;">Welcome to My Page</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="index1.html">My Hobby</a></li>
+                <li><a href="index2.html">Cheat Pages</a></li>
+                <li><a href="#contact-section" id="contact-link" class="btn">Contact</a></li>
+                <li style="left: 200px;"><a href="https://www.linkedin.com/in/nesru-abbamilki-372943333/">linkedin</a></li>
+            </ul>
+            <div id="icon-container"></div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Profile Image Section -->
+        <section>
+            <img src="image.png" alt="">
+            <div class="waterfall"></div>
+        </section>
+
+        <div id="rolled-scroll" class="scroll-rolled" onclick="openScroll()">
+            <p>Resume</p>
+            <span>Open Me</span>
+        </div>
+
+        <div id="unrolled-scroll" class="scroll-unrolled hidden">
+            <div class="scroll-header">Nesru's Resume</div>
+            <div id="scroll-content">
+                <p class="page" id="page1">I can communicate between server and client using HTML/CSS, Java scripts, IOT, and C++ programming language.
+                    I also have teamwork, communication, and leadership experiences during collaboration.
+                   Work ethics and attitude: I am goal-focused so I am determined.</p>
+               <p class="page hidden" id="page2">In my previous job, I had to work independently with little supervision and assistance.
+                    Our industry operates in a fast-paced environment, where its speed is relative to the demand of customers, When things
+                     became very fast-paced and employees were absent, I worked hard to finish the job on time</p>
+              <p class="page hidden" id="page3">Thus, my supervisor often thanked me, which I consider a celebration of my strong work ethic</p>
+              <p class="page hidden" id="page4">I am committed to professional development and regularly participate in software development
+                to stay at the forefront of drafting technology</p>
+            </div>
+            <button id="prev-btn" class="nav-btn" onclick="showPrevious()">Previous</button>
+            <button id="next-btn" class="nav-btn" onclick="showNext()">Next</button>
+        </div>
+
+        <!-- Rotating Text Circle -->
+        <aside>
+            <div class="circle">
+                <span class="rotating-text">#Open to Work</span>
+            </div>
+        </aside>
+
+        <!-- Secondary Image Section -->
+        <section>
+            <img src="nesru.jpg" alt="Secondary Image">
+        </section>
+       
+        <!-- Contact Form Section -->
+        <section id="contact-section">
+            <form id="contactForm" onsubmit="sendEmail(event)">
+                <fieldset style="width: 50%;">
+                    <legend>Contact Form</legend>
+                    <table>
+                        <tr>
+                            <td><label for="fname">First Name: </label></td>
+                            <td><input type="text" id="fname" placeholder="First Name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lname">Last Name: </label></td>
+                            <td><input type="text" id="lname" placeholder="Last Name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="em">E-mail: </label></td>
+                            <td><input type="email" id="em" placeholder="E-mail" required></td>
+                        </tr>
+                    </table>
+
+                    <textarea id="message" placeholder="Your Message..." rows="10" cols="100"></textarea>
+                    <input type="submit" value="Send">
+                </fieldset>
+            </form>
+            <div id="notification"></div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script> <!-- Link to the external JS file -->
+</body>
+</html>
